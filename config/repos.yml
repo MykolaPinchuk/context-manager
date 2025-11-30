@@ -1,0 +1,7 @@
+base_dir: /home/mykola/repos
+repos:
+  - ds1
+  - ds2
+  - swe1
+  - swe2
+  - temp_sales_forecasting_tool1
