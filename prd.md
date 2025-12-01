@@ -67,7 +67,7 @@ Target user flow:
   - `agents.md` (instructions)
   - `business_context.md` (business context)
 - **Repo-local overrides** (optional, per repo):
-  - `agents.local.md`
+  - `local_instructions.md`
   - `business_context.local.md`
 
 ### 3.2 Data flow
@@ -128,7 +128,7 @@ Each work repo (e.g. `ds1`, `ds2`, `swe1`, `swe2`) will eventually contain:
   agents.md                  # GENERATED: instructions for this repo
   business_context.md        # GENERATED: business context for this repo
 
-  agents.local.md            # OPTIONAL: local instructions override
+  local_instructions.md      # OPTIONAL: local instructions override
   business_context.local.md  # OPTIONAL: local business override
 
   ... other project files ...
@@ -338,7 +338,7 @@ TARGET_FILES = {
 }
 
 LOCAL_OVERRIDES = {
-    "instructions": "agents.local.md",
+  "instructions": "local_instructions.md",
     "business": "business_context.local.md",
 }
 ```
@@ -461,7 +461,7 @@ Keep the README concise.
 
    * Add or adjust `.context-profile.yml`.
    * Generate `agents.md` and `business_context.md`.
-   * Optionally create `agents.local.md` / `business_context.local.md` as examples or tests.
+  * Optionally create `local_instructions.md` / `business_context.local.md` as examples or tests.
 
 ```
 ```

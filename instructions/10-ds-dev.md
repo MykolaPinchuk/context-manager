@@ -6,3 +6,8 @@
 - When doing modeling, always split data into at least three sets (train, validation, test). Always report results on all three sets.
 - Iterate rapidly. Start with small subsamples. When scaling up to full data, estimate how long code will take to run. Avoid any code that is expected to take more than 5 minutes to run.
 - Use multiprocessing to speed up code if needed.
+- For each dataset/modeling problem, create a eda_summary.md. It should contain:
+  - description of the dataset/problem. It should describe which problem modeling task will try to solve, what target variable means, what key features are, and what they mean.
+  - basic EDA results (distributions of key variables, missingness, correlations).
+  If the task includes building and evaluating a model, such information may be included into model_summary.md instead of eda_summary.md. What amtters is that any run should have at least one of these two files describing the data.
+- When reporting a subtask as complete, clearly specify where the main results/reports which human will likely want to see are located.

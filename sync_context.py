@@ -34,7 +34,7 @@ TARGET_FILES = {
 }
 
 LOCAL_OVERRIDES = {
-    "instructions": "agents.local.md",
+    "instructions": "local_instructions.md",
     "business": "business_context.local.md",
 }
 

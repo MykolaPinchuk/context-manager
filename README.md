@@ -46,11 +46,11 @@ business:
   - biz-global
 ```
 
-Optional overrides live next to project files (`agents.local.md`, `business_context.local.md`).
+Optional overrides live next to project files (`local_instructions.md`, `business_context.local.md`).
 
 ## Onboarding a new repo
 1. Create `.context-profile.yml` inside the repo using one of the examples above.
-2. (Optional) add `agents.local.md` and/or `business_context.local.md` for repo-specific notes.
+2. (Optional) add `local_instructions.md` and/or `business_context.local.md` for repo-specific notes. A starter template for instructions overrides lives in this repo as `local_instructions.template.md`.
 3. Add the repo name (or path) to `config/repos.yml` so `python sync_context.py` picks it up, or run the script once with `--repo /path/to/repo`.
 4. Run `python sync_context.py` to generate/update `agents.md` and `business_context.md`.
 
